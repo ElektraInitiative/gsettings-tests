@@ -1,7 +1,24 @@
-CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Makefile
-cmake_install.cmake
-install_manifest.txt
-CTestTestfile.cmake
+# git-ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+
+#ignore backups
+*~
+
+#ignore debian patches
+.pc/
+debian/patches/
+
+#ignore all build directories of cmake
+build*
+
+#ignore ctags + gdb history files
+.ctags
+.gdb_history
+
+#ignore emacs backup files
+\#*#
+
+#ignore Makefile in project root
+/Makefile
